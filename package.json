@@ -1,0 +1,19 @@
+{
+  "name": "replace-vue-async-router-babel-plugin",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilijialiang/replace-vue-async-router-babel-plugin.git"
+  },
+  "author": "lijialiang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lilijialiang/replace-vue-async-router-babel-plugin/issues"
+  },
+  "homepage": "https://github.com/lilijialiang/replace-vue-async-router-babel-plugin#readme"
+}
