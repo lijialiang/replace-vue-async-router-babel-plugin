@@ -4,14 +4,15 @@ module.exports = function ({ types: t }, options) {
   return {
     visitor: {
       ArrowFunctionExpression (path) {
-        if (path.node.id.name === 'component') {
+        const body = path.node.body
+        if (body.type === 'CallExpression' && body.callee.type === 'Import') {
           const value = path.node.body.arguments[0].value
 
           let isInclude = false
 
           include.forEach(v => value.indexOf(include) >= 0 && (isInclude = true))
 
-          !isInclude && path.replaceWithSourceString(`{ template: '<p>Replace Async Router Module: ${value}</p>' }`)
+          !isInclude && path.replaceWithSourceString(`{ template: '<h1 id="replace-vue-async-router-babel-plugin">Replace Async Router Module: ${value}</h1>' }`)
         }
       }
     }
