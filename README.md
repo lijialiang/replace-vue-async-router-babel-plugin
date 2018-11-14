@@ -38,8 +38,12 @@ module: {
 new VueRouter({
   routes: [
     { path: '/a', component: () => import('/router/a.vue') }, // component `a` will be used normally
-    { path: '/b', component: () => import('/router/a.vue') }, // component `b` will be replaced
-    { path: '/c', component: () => import('/router/a.vue') }  // component `c` will be replaced
+    { path: '/b', component: () => import('/router/b.vue') }, // component `b` will be replaced
+    { path: '/c', component: () => import('/router/c.vue') }  // component `c` will be replaced
   ]
 })
 ```
+
+## LICENSE
+
+[MIT](./LICENSE)
