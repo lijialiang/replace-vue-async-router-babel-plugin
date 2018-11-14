@@ -1,6 +1,6 @@
 # replace-vue-async-router-babel-plugin
 
-Replace some lazy loaded Vue modules with simple functions via the Babel plugin. Reduce Webpack dependencies during development and speed up compilation.
+Replace some lazy loaded modules of Vue Router Component with simple functions via the Babel plugin. Reduce Webpack dependencies during development and speed up compilation.
 
 ## Install
 
